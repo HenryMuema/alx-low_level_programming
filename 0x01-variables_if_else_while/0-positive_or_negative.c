@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/*
+ *  print whether the number stored in the variable n is positive
+ *  or negative.
+ */
 int main(void)
 {
 	int n;
@@ -16,9 +20,9 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-	else 
+	else
 	{
 		printf("%d is negative\n", n);
 	}
-	return( 0 );
+	return (0);
 }
