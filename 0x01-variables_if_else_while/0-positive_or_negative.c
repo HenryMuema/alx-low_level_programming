@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /*
- *  print whether the number stored in the variable n is positive
- *  or negative.
+ *  print whether the number stored in the variable n is +ve 
+ *  or -ve
  */
 int main(void)
 {
