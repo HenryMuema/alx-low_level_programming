@@ -8,13 +8,14 @@
  */
 void times_table(void)
 {
-	int a, b;
+	int a, b, pro;
 
 	for (a = 0; a <= 9; a++)
 	{
 		for (b = 0; b <= a; b++)
 		{
-			printf("%d*%d, ", a, b);
+			pro = a * b;
+			printf("%d, ", pro);
 		}
 		_putchar('\n');
 	}
