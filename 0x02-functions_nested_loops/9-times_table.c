@@ -15,8 +15,15 @@ void times_table(void)
 		for (b = 0; b <= 9; b++)
 		{
 			pro = a * b;
-			printf("%d, ", pro);
+			printf("%d", pro);
+			if (b != 9)
+			{
+				printf(", ");
 		}
+			if (pro <= 9)
+			{
+				printf(" ");
+			}
 		_putchar('\n');
 	}
 }
