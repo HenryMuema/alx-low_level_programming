@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/*
- *  print whether the number stored in the variable n is +ve 
- *  or -ve
+/**
+ * main - print whether the number stored in the variable n is +ve
+ *
+ *  Return: 0
  */
 int main(void)
 {
