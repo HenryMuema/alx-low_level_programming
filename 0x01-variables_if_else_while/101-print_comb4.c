@@ -1,8 +1,10 @@
 #include<stdio.h>
-/*  program that prints all possible different combination of thre
- *  e digits
+/**
+ * main -   program that prints all possible different combinatio
+ * n of three digits
+ *
+ * Return: 0
  */
-
 int main(void)
 {
 	int a, b, c;
@@ -11,7 +13,7 @@ int main(void)
 	{
 		for (b = '1'; b <= '8'; b++)
 		{
-			for (c ='2'; c <= '9'; c++)
+			for (c = '2'; c <= '9'; c++)
 			{
 				if (b > a && c > b)
 				{
@@ -20,9 +22,9 @@ int main(void)
 					putchar (c);
 					putchar (',');
 					putchar (' ');
-				}
 			}
 		}
+	}
 	}
 	putchar ('\n');
 	return (0);

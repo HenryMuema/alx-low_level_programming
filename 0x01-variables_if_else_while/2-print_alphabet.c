@@ -1,6 +1,8 @@
 #include<stdio.h>
-/*
- * all code is inserted in the main
+/**
+ * main - all code is inserted in the main
+ *
+ * Return: 0
  */
 int main(void)
 {
