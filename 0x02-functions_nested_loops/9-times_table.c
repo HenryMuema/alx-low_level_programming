@@ -18,12 +18,13 @@ void times_table(void)
 			printf("%d", pro);
 			if (b != 9)
 			{
-				printf(", ");
-		}
+			printf(", ");
+			}
 			if (pro <= 9)
 			{
 				printf(" ");
 			}
 		_putchar('\n');
+		}
 	}
 }
