@@ -1,7 +1,7 @@
 #include "main.h"
 #include<stdio.h>
 /**
- * main - prints 1 to 100 where multiples of 3, 5 or both are printed 
+ * main - prints 1 to 100 where multiples of 3, 5 or both are printed
  * fizz, buzz and fizzbuzz respectively
  *
  * Return: 0
@@ -10,7 +10,7 @@ int main(void)
 {
 	int a;
 
-	for (a =1; a <= 100; a++)
+	for (a = 1; a <= 100; a++)
 	{
 		if (a % 3 == 0)
 		{
