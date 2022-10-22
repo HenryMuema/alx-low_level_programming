@@ -5,7 +5,7 @@
  *
  * return: Always 0.
  */
-int amin(void)
+int main(void)
 {
 	print_triangle(2);
 	print_triangle(10);
