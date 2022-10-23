@@ -15,13 +15,17 @@ int main(void)
 		{
 			for (c = '2'; c <= '9'; c++)
 			{
-				if (b > a && c > b)
+				if (c > b && b > a)
 				{
 					putchar (a);
 					putchar (b);
 					putchar (c);
+				}
+				if (a !='7' && b !='8' && c !='9')
+				{
 					putchar (',');
 					putchar (' ');
+				}
 			}
 		}
 	}
