@@ -1,7 +1,7 @@
 #include"main.h"
 /**
  *reset_to_98 - assigns new value
- *@*n: poinnter of integer type
+ *@n: poinnter of integer type
  *
  * Return: void
  */
