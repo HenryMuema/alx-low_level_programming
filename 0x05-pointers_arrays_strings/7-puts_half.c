@@ -20,6 +20,7 @@ void puts_half(char *str)
 			_putchar(str[a]);
 		}
 	}
+<<<<<<< HEAD
 	else
 	{
 		for (a = c + 1; a <= len - 1; a++)
@@ -28,4 +29,14 @@ void puts_half(char *str)
 		}
 	}
 	_putchar('\n');
+=======
+		else
+		{
+			for (a = c + 1; a <= len - 1; a++)
+			{
+				_putchar(str[a]);
+			}
+			_putchar('\n');
+		}
+>>>>>>> ab7dfb1cc5ab281d6e0a30e01fccbfa1814aad66
 }

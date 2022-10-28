@@ -1,6 +1,7 @@
 #include"main.h"
 #include<string.h>
 /**
+<<<<<<< HEAD
 * string_toupper - changes all lowercase letters of a string to uppercasw
 *@x: string argument
 *
@@ -18,4 +19,15 @@ char *string_toupper(char *x)
 		}
 	}
 	return (x);
+=======
+ *string_toupper -  changes all lowercase letters of a string to uppercase.
+ *@a: string to be changed
+ *
+ *Return: changed string
+ */
+char *string_toupper(char *a)
+{
+	char str = strupr(a);
+	return (str);
+>>>>>>> ab7dfb1cc5ab281d6e0a30e01fccbfa1814aad66
 }
