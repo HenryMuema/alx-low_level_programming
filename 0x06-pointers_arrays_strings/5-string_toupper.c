@@ -2,7 +2,7 @@
 #include<string.h>
 /**
 <<<<<<< HEAD
-* string_toupper - changes all lowercase letters of a string to uppercasw
+* string_toupper - changes all lowercase letters of a string to uppercase
 *@x: string argument
 *
 * Return: changed string
