@@ -4,6 +4,7 @@
  * _strncpy - copies a string
  *@dest: first string
  *@src: second string
+ *@n: number of bytes from src
  *
  *Return: copied string- 'dest'
  */
