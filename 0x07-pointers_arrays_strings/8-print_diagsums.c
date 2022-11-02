@@ -9,9 +9,10 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int b, c;
+	int i, j, sum1, sum2;
 
-	/**sum1 = 0;
+	sum1 = 0;
+	sum2 = 0;
 	for (i = 0; i < size; i++)
 	{
 		for (j = 0; j < size; j++)
@@ -20,18 +21,12 @@ void print_diagsums(int *a, int size)
 			{
 				sum1 += *(a + i * size + j);
 			}
+			if ((i + j) == (size - 1))
+			{
+				sum2 += *(a + j * size + i);
+			}
 		}
 	}
-	printf("%d", sum1);
-	printf("\n");*/
-	for (b = 0; b < size; b++)
-	{
-		for (c = size - 1; c >= 0; c--)
-		{
-			printf("%d, ", *(a + b* size + c));
-		}
-	}
-		printf("\n");
-		printf("\n");
+	printf("%d, ", sum1);
+	printf("%d\n", sum2);
 }
-
