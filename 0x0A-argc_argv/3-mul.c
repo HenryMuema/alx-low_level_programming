@@ -7,19 +7,19 @@
  *
  *Return: Always 0.
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int mult, a;
-	
+
 	mult = 1;
 	for (a = 1; a < argc; a++)
 	{
 		mult *= atoi(argv[a]);
 	}
 	printf("%d\n", mult);
-	 if (a == 0)
-	 {
-		 printf("Error\n");
-	 }
+	if (a == 0)
+	{
+		printf("Error\n");
+	}
 	return (1);
 }
