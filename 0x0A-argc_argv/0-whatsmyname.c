@@ -2,12 +2,12 @@
 #include<stdlib.h>
 /**
  *main - check the code
- *@argc: number of line arguments 
+ *@argc: number of line arguments
  *@argv: vector of the line arguments
  *
  *Return: Always 0.
  */
-int main (int argc, char  *argv[])
+int main(int argc, char *argv[])
 {
 	argc = 0;
 
