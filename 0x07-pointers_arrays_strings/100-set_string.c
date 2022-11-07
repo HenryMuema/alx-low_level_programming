@@ -1,4 +1,5 @@
 #include"main.h"
+#include<string.h>
 /**
  *set_string - sets the value of a pointer to a char
  *@s: pointer to pointer
@@ -8,8 +9,10 @@
  */
  void set_string(char **s, char *to)
 {
-	char x;
+	int a;
 
-	s = &to;
-	x = **s;
+	for (a = 0; to[a] != '\0'; a++)
+	{
+		**s = *(to + a);
+	}
 }

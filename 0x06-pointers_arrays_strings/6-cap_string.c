@@ -8,58 +8,32 @@
  */
 char *cap_string(char *x)
 {
-	int a;
+	int a = 0;
 
-	for (a = 0; x[a] != '\0'; a++)
+	while ( x[a] != '\0')
 	{
-		switch (x[a])
-		{
-			case (' '):
-				x[a + 1] = x[a + 1] - 32;
-				break;
-			case ('	'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('\n'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case(','):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case(';'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('.'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('!'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('?'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('"'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('('):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case(')'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('{'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			case('}'):
-				 x[a + 1] = x[a + 1] – 32;
-				 break;
-			default:
-				 break;
-		}
-		else
-		{
-			x[a];
-		}
+		  if (!(x[a] >= 'a' && x[a] <= 'z'))
+		  {
+			  if ( x[a] == '\t' || 
+				x[a] == '\n' ||
+				x[a] == ' ' ||
+				x[a] == ',' ||
+				x[a] == '.' ||
+				x[a] == '!' ||
+				x[a] == '?' ||
+				x[a] == '"' ||
+				x[a] == '(' ||
+				x[a] == ')' ||
+				x[a] == '{' ||
+				x[a] == '}')
+			  {
+				  x[a + 1] -= 32;
+			  }
+		  }
+		  else
+		  {
+			  a++;
+		  }
 	}
 	return (x);
 }
