@@ -16,12 +16,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	free(b);
-	/**
-	*if (*a == NULL)
-	*{
-	*	return (NULL);
-	*}
-	*/
+	if (a == NULL)
+	{
+		return (NULL);
+	}
 	return (a);
 }
