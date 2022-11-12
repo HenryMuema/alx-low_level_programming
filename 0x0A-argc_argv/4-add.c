@@ -8,25 +8,28 @@
  *
  *Return: Always 0.
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	int a, add;
+	int a, b, add;
 
 	add = 0;
 	for (a = 0; a < argc; a++)
 	{
-		if (isdigit(atoi(char argv[a])))
+		if (!(*argv[a] >= '0' && *argv[a] <= '9'))
 		{
-			add += atoi(argv[a]);
+		printf("0\n");
+		break;
+		}
+		if (*argv[a] >= '0' && *argv[a] <= '9')
+		{
+			b = atoi(argv[a]);
+			add += b;
 		}
 		else
 		{
 			printf("Error\n");
+			break;
 		}
 	}
-	/**if !(isdigit(char argv[]))
-	{
-		printf("0\n");
-	}*/
 	return (1);
 }
