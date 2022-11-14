@@ -10,26 +10,30 @@
  */
 int main(int argc, char *argv[])
 {
-	int a, b, add;
+	int c, a, b, add;
 
 	add = 0;
-	for (a = 0; a < argc; a++)
+	if  (argc == 1)
 	{
-		if (!(*argv[a] >= '0' && *argv[a] <= '9'))
-		{
 		printf("0\n");
-		break;
-		}
-		if (*argv[a] >= '0' && *argv[a] <= '9')
-		{
-			b = atoi(argv[a]);
-			add += b;
-		}
-		else
+		return (0);
+	}
+	for (a = 1; a < argc; a++)
+	{
+		if (!(*argv[a] >= '0') && atoi(argv[a]) <= 0)
 		{
 			printf("Error\n");
-			break;
+			return (1);
 		}
 	}
-	return (1);
+	for (c = 1; c <argc; c++)
+	{
+		if (*argv[c] >= '0' && atoi(argv[c]) >= 0)
+		{
+			b = atoi(*(argv + c));
+			add += b;
+		}
+	}
+	printf("%d\n", add);
+	return (0);
 }
