@@ -1,7 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 /**
- *sruct dog - dog  identity
+ *struct dog - dog identity
  *@name: name of the dog
  *@age: how old is the dog
  *@owner: who owns the dog
