@@ -10,7 +10,7 @@
 size_t print_list(const list_t *h)
 {
 	list_t *head, *newnode, *current;
-	size_t count = 1;
+	size_t count = 0;
 
 	head = current = 0;	 
 	newnode = (list_t *)malloc(sizeof(list_t));
@@ -23,32 +23,27 @@ size_t print_list(const list_t *h)
 		head = newnode;
 	}
 	current = head;
-	current->len = h->len;
-	current->str = h->str;
-	current->next = newnode;
-	if (current->str == NULL)
-	{
-		printf("[0] (nil)\n");
-	}
-	else
-	{
-		printf("[%d] %s\n",current->len, current->str);
-	}
-	while (current->next != NULL)
+	while (current != NULL)
 	{
 		current->str = h->str;
 		current->len = h->len;
-		current->next = h->next;
+		/**newnode = (list_t*)malloc(sizeof(list_t));
+		  if (newnode == NULL)
+		   {
+			   exit(1);
+		   }
+		current->next = newnode;
+		*/
 		current = current->next;
+		count++;
+	}
 		if (current->str == NULL)
 		{
 			printf("[0] (nil)");
 		}
 		else
 		{
-			printf("[%d] %s\n", current->len, current->str);
+			printf("[%d] %s", current->len, current->str);
 		}
-		count++;
-	}
 	return (count);
 }
